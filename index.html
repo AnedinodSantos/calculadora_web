@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Web</title>
+</head>
+<body>
+    <form action="http://localhost:5002/calcula" method="post">
+        <label for="num1">numero1</label>
+        <input type="number" id="num1" name = "num1">
+
+        <label for="num2">numero2</label>
+        <input type="number" id="num2" name = "num2">
+
+        <label for="oper">Operação</label>
+        <select name="oper" id="oper">
+            <option value="subtrair">Subtrair num2 de num1</option>
+            <option value="somar">Somar num1 com num2</option>
+            <option value="multiplicar">Multiplicar num1 com num2</option>
+            <option value="dividir">Dividir num1 por num2</option>
+        </select>
+
+        <button type="submit">calcula</button>
+    </form>
+</body>
+</html>
